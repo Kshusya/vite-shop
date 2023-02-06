@@ -8,8 +8,8 @@ export default function Product(props) {
         <p className='product__text'>{props.name}</p>
         <Price value={props.price} />
         <div className='product__buttons'>
-            <button onClick={props.remove}>-</button>
-            <button onClick={props.add}>+</button>
+            <button onClick={props.remove} className='button button_remove'>-</button>
+            <button onClick={props.add} className='button button_add'>+</button>
         </div>
     </div>
 }

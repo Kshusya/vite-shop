@@ -2,8 +2,15 @@ h1, h2, h3, p {
     margin: 0;
 }
 
+.container {
+    max-width: 1440px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
 .products {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     &__card {
         // padding: 20px;
@@ -24,7 +31,7 @@ h1, h2, h3, p {
         object-fit: contain;
         max-width: 250px;
         max-height: 250px;
-        margin: 0 20px;
+        margin: 0 auto;
         &_overlay-grey {
             position: relative;
             &::after {
@@ -43,5 +50,23 @@ h1, h2, h3, p {
         display: flex;
         justify-content: center;
         gap: 16px;
+    }
+}
+
+.price {
+    &__block {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 1px;
+    }
+    &__symbol,
+    &__fraction {
+        font-size: 13px;
+        position: relative;
+        top: -0.35em;
+    }
+    &__whole {
+        font-size: 28px;
     }
 }
