@@ -13,9 +13,9 @@ h1, h2, h3, p {
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
     &__card {
-        // padding: 20px;
+        padding-bottom: 8px;
         border: 1px solid #f8f8f8;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 }
 
@@ -25,6 +25,7 @@ h1, h2, h3, p {
         line-height: 24px;
         display: flex;
         justify-content: center;
+        margin-top: 8px;
     }
     &__image {
         display: block;
@@ -43,13 +44,26 @@ h1, h2, h3, p {
                 height: 100%;
                 background: #000;
                 opacity: .03;
+                border-radius: 7px;
             }
         }
     }
-    &__buttons {
+    &__buttons-block {
         display: flex;
         justify-content: center;
+        align-items: center;
         gap: 16px;
+    }
+    &__button {
+        cursor: pointer;
+        background-color: #faae41;
+        border: none;
+        border-radius: 8px;
+        width: 32px;
+        height: 32px;
+        &:active {
+            background-color: #de9a3a;
+        }
     }
 }
 
