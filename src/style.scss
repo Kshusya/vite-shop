@@ -84,3 +84,9 @@ h1, h2, h3, p {
         font-size: 28px;
     }
 }
+
+.page {
+    &__block {
+        display: flex;
+    }
+}

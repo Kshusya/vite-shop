@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './style.scss'
 import products, { getProductById } from './products'
 import Product from './components/Product'
+import Page from './components/Page'
+import { Route, Routes } from 'react-router-dom'
 
 function App(props) {
   const [cart, setCart] = useState([])
@@ -42,10 +44,14 @@ function App(props) {
       <div>
         Products in cart: {cart.length}, total price: {totalPrice.toFixed(2)}
       </div>
-      <div className='products'>
+      {/* <div className='products'>
         {productsComponents}
-      </div>
+      </div> */}
 
+      <Routes>
+        <Route path="/" element={<div className='products'>{productsComponents}</div>} />
+        <Route path={`/product/:id`} element={<Page />} />
+      </Routes>
     </div>
   )
 }
