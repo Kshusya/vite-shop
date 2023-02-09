@@ -9,7 +9,7 @@ export default function Page(props) {
 
     return <div className="page">
         <div className="page__block">
-            <img src={`/${id}.jpg`} alt="" />
+            <img src={`/${id}.jpg`} width="470" alt="" />
             <div>
                 <p>{product.name}</p>
                 <Price value={product.price} />

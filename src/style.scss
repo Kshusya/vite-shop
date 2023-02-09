@@ -8,6 +8,11 @@ h1, h2, h3, p {
     margin-right: 40px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .products {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -26,6 +31,9 @@ h1, h2, h3, p {
         display: flex;
         justify-content: center;
         margin-top: 8px;
+        &:hover {
+            color: #C7511F;
+        }
     }
     &__image {
         display: block;
