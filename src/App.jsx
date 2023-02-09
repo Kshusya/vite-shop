@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './style.scss'
-import products from './products'
+import products, { getProductById } from './products'
 import Product from './components/Product'
 
 function App(props) {
@@ -33,7 +33,7 @@ function App(props) {
   
   let totalPrice = 0
   cart.forEach(cartItemId => {
-    const cartProduct = products.find(product => product.id == cartItemId)
+    const cartProduct = getProductById(cartItemId)
     totalPrice = totalPrice + cartProduct.price
   })
 

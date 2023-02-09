@@ -1,4 +1,4 @@
-export default [
+const products = [
     {
         id: 1,
         name: "Bratz doll Meygan",
@@ -30,3 +30,9 @@ export default [
         price: 24.99,
     },
 ]
+
+export default products
+
+export function getProductById(id) {
+    return products.find(product => product.id == id)
+}
