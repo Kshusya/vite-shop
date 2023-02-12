@@ -15,7 +15,12 @@ function App(props) {
   function removeFromCart(id) {
     const itemIndex = cart.findIndex(value => value === id)
 
-    setCart(cart.filter((_, i) => i !== itemIndex))
+    // --I have two ways to write this code, the first one:
+    // setCart(cart.filter((_, i) => i !== itemIndex))
+    // --and the second one:
+    let cartCopy = [...cart]
+    cartCopy.splice(itemIndex, 1)
+    setCart(cartCopy)
   }
 
 
