@@ -97,4 +97,9 @@ a {
     &__block {
         display: flex;
     }
+    &__image {
+        display: block;
+        object-fit: contain;
+        max-width: 470px;
+    }
 }
