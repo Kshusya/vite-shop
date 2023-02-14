@@ -4,10 +4,10 @@ export default function Price(props) {
         .padStart(2, '0');
 
     return <div className='price'>
-        <div className='price__block'>
+        {props.value !== null && <div className={`price__block ${props.centered && 'price__block_centered'}`}>
             <span className='price__symbol'>$</span>
             <span className='price__whole'>{whole}</span>
             <span className='price__fraction'>{fraction}</span>
-        </div>
+        </div>}
     </div>
 }
