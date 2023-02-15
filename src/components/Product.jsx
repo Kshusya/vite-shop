@@ -10,7 +10,7 @@ export default function Product(props) {
                 </div>
             </Link>
             <Link to={`/product/${props.id}`}>
-                <p className='product__text'>{props.name}</p>
+                <p className='product__text'>{props.collectionName + " " + props.name}</p>
             </Link>
         </div>
         <div>

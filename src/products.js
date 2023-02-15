@@ -1,42 +1,50 @@
 const products = [
     {
         id: 1,
-        name: "Bratz Original Fashion Doll Meygan",
+        name: "Meygan",
+        collectionName: "Bratz Original Fashion Doll",
         price: 23.99,
     },
     {
         id: 2,
-        name: "Bratz Original Fashion Doll Nevra",
+        name: "Nevra",
+        collectionName: "Bratz Original Fashion Doll",
         price: 20.99,
     },
     {
         id: 3,
-        name: "Bratz Original Fashion Doll Kumi",
+        name: "Kumi",
+        collectionName: "Bratz Original Fashion Doll",
         price: 20.99,
     },
     {
         id: 4,
-        name: "Bratz Original Fashion Doll Kiana",
+        name: "Kiana",
+        collectionName: "Bratz Original Fashion Doll",
         price: 17.99,
     },
     {
         id: 5,
-        name: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll Yasmin",
+        name: "Yasmin",
+        collectionName: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll",
         price: 48.00,
     },
     {
         id: 6,
-        name: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll Sasha",
+        name: "Sasha",
+        collectionName: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll",
         price: 24.99,
     },
     {
         id: 7,
-        name: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll Cloe",
+        name: "Cloe",
+        collectionName: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll",
         price: null,
     },
     {
         id: 8,
-        name: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll Jade",
+        name: "Jade",
+        collectionName: "Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll",
         price: 44.84,
     },
 ]

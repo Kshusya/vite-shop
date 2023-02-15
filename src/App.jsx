@@ -1,62 +1,45 @@
-import { useState } from 'react'
+import React from 'react'
 import './style.scss'
 import products, { getProductById } from './products'
 import Product from './components/Product'
-import Page from './components/Page'
+import Page from './pages/Page'
 import { Route, Routes } from 'react-router-dom'
+import IndexPage from './pages/IndexPage'
+import Header from './components/Header'
+
+export const UserContext = React.createContext()
+
+export function addToCart(cart, setCart, id) {
+  setCart([...cart, id])
+}
+
+export function removeFromCart(cart, setCart, id) {
+  const itemIndex = cart.findIndex(value => value === id)
+
+  // --I have two ways to write this code, the first one:
+  // setCart(cart.filter((_, i) => i !== itemIndex))
+  // --and the second one:
+  let cartCopy = [...cart]
+  cartCopy.splice(itemIndex, 1)
+  setCart(cartCopy)
+}
+
+export function getQuantityById(cart, id) {
+  return cart.filter(itemId => itemId === id).length
+}
 
 function App(props) {
-  const [cart, setCart] = useState([])
-
-  function addToCart(id) {
-    setCart([...cart, id])
-  }
-
-  function removeFromCart(id) {
-    const itemIndex = cart.findIndex(value => value === id)
-
-    // --I have two ways to write this code, the first one:
-    // setCart(cart.filter((_, i) => i !== itemIndex))
-    // --and the second one:
-    let cartCopy = [...cart]
-    cartCopy.splice(itemIndex, 1)
-    setCart(cartCopy)
-  }
-
-
-  const productsComponents = products.map(product => {
-    let count = cart.filter(itemId => itemId === product.id).length
-
-    return (
-      <Product
-        key={product.id}
-        {...product}
-        add={() => addToCart(product.id)}
-        remove={() => removeFromCart(product.id)}
-        count={count}
-      />
-    )
-  })
-  
-  let totalPrice = 0
-  cart.forEach(cartItemId => {
-    const cartProduct = getProductById(cartItemId)
-    totalPrice = totalPrice + cartProduct.price
-  })
+  const [cart, setCart] = React.useState([])
 
   return (
     <div>
-      <div>
-        Products in cart: {cart.length}, total price: {totalPrice.toFixed(2)}
-      </div>
-      {/* <div className='products'>
-        {productsComponents}
-      </div> */}
-
-      <Routes>
-        <Route path="/" element={<div className='products'>{productsComponents}</div>} />
-        <Route path={`/product/:id`} element={<Page />} />
-      </Routes>
+      <UserContext.Provider value={{ cart: cart, setCart: setCart }}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<div className='products'>{<IndexPage />}</div>} />
+          <Route path={`/product/:id`} element={<Page />} />
+        </Routes>
+      </UserContext.Provider>
     </div>
   )
 }

@@ -1,11 +1,17 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1, h2, h3, p {
     margin: 0;
 }
 
 .container {
     max-width: 1440px;
-    margin-left: 40px;
-    margin-right: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a {
@@ -17,6 +23,13 @@ a {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 24px;
+    @media screen and (min-width: 678px) and (max-width: 1279px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media screen and (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     &__card {
         padding-bottom: 8px;
         border: 1px solid #f8f8f8;
@@ -100,16 +113,57 @@ a {
 }
 
 .page {
-    &__block {
+    &__container {
+        max-width: 1024px;
         display: flex;
+        justify-content: space-between;
+        margin: 36px auto;
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+    &__description {
+        max-width: 440px;
     }
     &__image {
         display: block;
         object-fit: contain;
         max-width: 470px;
+        margin-right: 32px;
+        @media screen and (max-width: 767px) {
+            margin-right: 0;
+        }
     }
     &__name {
         font-size: 24px;
         line-height: 32px;
+        font-weight: 500;
+    }
+    &__price {
+        font-weight: 500;
+        margin: 8px 0;
+    }
+    &__add-button {
+        color: red;
+    }
+}
+
+.about {
+    &__container {
+        border-top: 1px solid lightgrey;
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 16px;
+    }
+    &__header {
+        font-weight: 600;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    &__list {
+        margin: 0 0 0 16px;
+        padding: 0;
+    }
+    &__one-point {
+        margin: 8px 0;
     }
 }
