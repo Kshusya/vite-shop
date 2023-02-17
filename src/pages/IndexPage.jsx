@@ -7,7 +7,7 @@ import Product from "../components/Product"
 export default function IndexPage(props) {
     const { cart, setCart } = useContext(UserContext)
 
-    const productsComponents = products.map(product => {
+    return products.map(product => {
 
         let count = getQuantityById(cart, product.id)
 
@@ -21,6 +21,4 @@ export default function IndexPage(props) {
             />
         )
     })
-
-    return productsComponents
 }

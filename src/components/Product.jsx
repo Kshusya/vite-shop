@@ -1,7 +1,11 @@
 import Price from "./Price"
 import { Link } from "react-router-dom"
+import AddToCartButton from "./AddToCartButton"
+import { getProductById } from "../products"
 
 export default function Product(props) {
+    const product = getProductById(props.id)
+
     return <div key={props.id} className='product products__card'>
         <div>
             <Link to={`/product/${props.id}`}>
@@ -17,11 +21,7 @@ export default function Product(props) {
             <Link to={`/product/${props.id}`}>
                 <Price centered={true} value={props.price} />
             </Link>
-            {props.price !== null && <div className='product__buttons-block'>
-                <button onClick={props.remove} className='button product__button'>–</button>
-                <div>{props.count}</div>
-                <button onClick={props.add} className='button product__button'>+</button>
-            </div>}
+            <AddToCartButton product={product} singleProduct={true} />
         </div>
     </div>
 }

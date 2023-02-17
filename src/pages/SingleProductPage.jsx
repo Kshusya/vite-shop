@@ -2,44 +2,20 @@ import { useParams } from "react-router-dom"
 import { getProductById } from "../products"
 import Price from "../components/Price"
 import { SideBySideMagnifier } from "@ricarso/react-image-magnifiers"
-import { UserContext } from "../App"
-import { useContext } from "react"
-import { addToCart, removeFromCart } from "../App"
-import { getQuantityById } from "../App"
+import AddToCartButton from "../components/AddToCartButton"
 
-export default function Page(props) {
+export default function Page() {
     const {id} = useParams()
-
-    const { cart, setCart } = useContext(UserContext)
 
     const product = getProductById(id)
 
-    const count = getQuantityById(cart, product.id)
-
-    let addToCartButton
-
-    if (count === 0) {
-        addToCartButton = (<button
-            className={`button ${count > 0 && 'page__add-button'}`} onClick={() => addToCart(cart, setCart, product.id)}>
-            Add product
-        </button>)
-    } else {
-        addToCartButton = (<div>
-            <button 
-                onClick={() => removeFromCart(cart, setCart, product.id)}
-                className='button product__button'>–</button>
-            <div>{count}</div>
-            <button
-                onClick={() => addToCart(cart, setCart, product.id)}
-                className='button product__button'>+</button>
-        </div>)
-    }
-
     return <div className="page">
         <div className="page__container">
-            {/* <img src={`/${id}.jpg`} width="470" alt="" /> */}
             <SideBySideMagnifier className="page__image"
-                imageSrc={`/${id}.jpg`} width="470" height="582"
+                inPlaceMinBreakpoint={720}
+                imageSrc={`/${id}.jpg`}
+                width="470"
+                height="582"
                 largeImageSrc={`/${id}-large.jpg`}
             />
             <div className="page__description description">
@@ -56,7 +32,7 @@ export default function Page(props) {
                         <li className="about__one-point">INCLUDES: 1 {product.collectionName}, fashions, 2 pairs of shoes, accessories, hair brush, and holographic poster.</li>
                     </ul>
                 </div>
-                {addToCartButton}
+                <AddToCartButton product={product} singlePage={true} />
             </div>
         </div>
     </div>
