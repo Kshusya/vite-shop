@@ -1,6 +1,6 @@
 export default function Price(props) {
-    const whole = Math.floor(props.value)
-    const fraction = String(parseInt(props.value * 100 % 100))
+    const whole = Math.floor(props.value / 100.0)
+    const fraction = String(parseInt(props.value % 100))
         .padStart(2, '0');
 
     return props.value !== null && <div className='price'>

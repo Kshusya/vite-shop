@@ -20,7 +20,7 @@ function ProductsInCart(props) {
                     </div>
                 </Link>
                 <Link to={`/product/${props.id}`}>
-                    <p className='cart__text'>{props.collectionName + " " + props.name}</p>
+                    <p className='cart__text'>{props.brand + " " + props.collectionName + " " + props.name}</p>
                 </Link>
             </div>
             <div className="cart__price">

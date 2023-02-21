@@ -8,7 +8,7 @@ export function calculateTotalPrice(cart) {
     let totalPrice = 0
     cart.forEach(cartItemId => {
       const cartProduct = getProductById(cartItemId)
-      totalPrice = totalPrice + cartProduct.price
+      totalPrice = totalPrice + cartProduct.price / 100.0
     })
     return totalPrice
 }

@@ -4,7 +4,7 @@ const products = [
         name: "Meygan",
         brand: "Bratz",
         collectionName: "Original Fashion Doll",
-        price: 23.99,
+        price: 2399,
         description: [
             "FAN FAVE RERELEASE: A near exact replica of the first-ever Meygan doll from the 2002 \"Xpress It!\" collection!",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Meygan's personal style.",
@@ -17,7 +17,7 @@ const products = [
         name: "Nevra",
         brand: "Bratz",
         collectionName: "Original Fashion Doll",
-        price: 20.99,
+        price: 2099,
         description: [
             "FAN FAVE RERELEASE: A near exact replica of the first-ever Nevra doll from the 2003 \"Formal Funk\" collection!",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Nevra's personal style.",
@@ -30,7 +30,7 @@ const products = [
         name: "Kumi",
         brand: "Bratz",
         collectionName: "Original Fashion Doll",
-        price: 20.99,
+        price: 2099,
         description: [
             "FAN FAVE RERELEASE: A near exact replica of the chic Kumi doll from the 2005 \"Ooh La La\" collection!",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Kumi's personal style.",
@@ -43,7 +43,7 @@ const products = [
         name: "Kiana",
         brand: "Bratz",
         collectionName: "Original Fashion Doll",
-        price: 17.99,
+        price: 1799,
         description: [
             "FAN FAVE RERELEASE: A near exact replica of the first-ever Kiana doll from the 2005 \"Wild Wild West\" collection!",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Kiana's personal style.",
@@ -56,59 +56,59 @@ const products = [
         name: "Yasmin",
         brand: "Bratz",
         collectionName: "20 Yearz Special Anniversary Edition Original Fashion Doll",
+        price: 4800,
         description: [
             "20 YEARZ SPECIAL EDITION: In celebration of Bratz turning 20 yearz old, collect these special edition fashion dolls in gorgeous foil packaging, featuring a 20 yearz motif and collectible holographic poster",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Yasmin's personal style.",
             "SUPER STYLIN’ FASHIONS: Yasmin includes 2 outfits for tons of mix ‘n’ match possibilities!",
             "INCLUDES: 1 Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll, 2 outfits, 2 pairs of shoes, accessories, hair brush, and holographic poster."
         ],
-        price: 48.00,
     },
     {
         id: 6,
         name: "Sasha",
         brand: "Bratz",
         collectionName: "20 Yearz Special Anniversary Edition Original Fashion Doll",
+        price: 2499,
         description: [
             "20 YEARZ SPECIAL EDITION: In celebration of Bratz turning 20 yearz old, collect these special edition fashion dolls in gorgeous foil packaging, featuring a 20 yearz motif and collectible holographic poster",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Sasha's personal style.",
             "SUPER STYLIN’ FASHIONS: Sasha includes 2 outfits for tons of mix ‘n’ match possibilities!",
             "INCLUDES: 1 Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll, 2 outfits, 2 pairs of shoes, accessories, hair brush, and holographic poster."
         ],
-        price: 24.99,
     },
     {
         id: 7,
         name: "Cloe",
         brand: "Bratz",
         collectionName: "20 Yearz Special Anniversary Edition Original Fashion Doll",
+        price: null,
         description: [
             "20 YEARZ SPECIAL EDITION: In celebration of Bratz turning 20 yearz old, collect these special edition fashion dolls in gorgeous foil packaging, featuring a 20 yearz motif and collectible holographic poster",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Cloe's personal style.",
             "SUPER STYLIN’ FASHIONS: Cloe includes 2 outfits for tons of mix ‘n’ match possibilities!",
             "INCLUDES: 1 Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll, 2 outfits, 2 pairs of shoes, accessories, hair brush, and holographic poster."
         ],
-        price: null,
     },
     {
         id: 8,
         name: "Jade",
         brand: "Bratz",
         collectionName: "20 Yearz Special Anniversary Edition Original Fashion Doll",
+        price: 4484,
         description: [
             "20 YEARZ SPECIAL EDITION: In celebration of Bratz turning 20 yearz old, collect these special edition fashion dolls in gorgeous foil packaging, featuring a 20 yearz motif and collectible holographic poster",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Jade's personal style.",
             "SUPER STYLIN’ FASHIONS: Jade includes 2 outfits for tons of mix ‘n’ match possibilities!",
             "INCLUDES: 1 Bratz 20 Yearz Special Anniversary Edition Original Fashion Doll, 2 outfits, 2 pairs of shoes, accessories, hair brush, and holographic poster."
         ],
-        price: 44.84,
     },
     {
         id: 9,
         name: "Sasha",
         brand: "Bratz",
         collectionName: "Girls Nite Out 21st Birthday Edition Fashion Doll",
-        price: 36.99,
+        price: 3699,
         description: [
             "21ST BIRTHDAY EDITION: In celebration of Bratz turning 21 yearz old, collect these special Bratz Girls Nite Out fashion dolls featuring a 21st Birthday Edition motif!",
             "GNO GLAM: Each doll has real eyelashes and body glitter.",
@@ -136,7 +136,7 @@ const products = [
         name: "Cloe",
         brand: "Bratz",
         collectionName: "Girls Nite Out 21st Birthday Edition Fashion Doll",
-        price: 36.99,
+        price: 3699,
         description: [
             "21ST BIRTHDAY EDITION: In celebration of Bratz turning 21 yearz old, collect these special Bratz Girls Nite Out fashion dolls featuring a 21st Birthday Edition motif!",
             "GNO GLAM: Each doll has real eyelashes and body glitter.",
@@ -150,7 +150,7 @@ const products = [
         name: "Yasmin",
         brand: "Bratz",
         collectionName: "Girls Nite Out 21st Birthday Edition Fashion Doll",
-        price: 36.97,
+        price: 3697,
         description: [
             "21ST BIRTHDAY EDITION: In celebration of Bratz turning 21 yearz old, collect these special Bratz Girls Nite Out fashion dolls featuring a 21st Birthday Edition motif!",
             "GNO GLAM: Each doll has real eyelashes and body glitter.",
@@ -164,13 +164,83 @@ const products = [
         name: "Jade",
         brand: "Bratz",
         collectionName: "Girls Nite Out 21st Birthday Edition Fashion Doll",
-        price: 36.99,
+        price: 3699,
         description: [
             "21ST BIRTHDAY EDITION: In celebration of Bratz turning 21 yearz old, collect these special Bratz Girls Nite Out fashion dolls featuring a 21st Birthday Edition motif!",
             "GNO GLAM: Each doll has real eyelashes and body glitter.",
             "ICONIC TRAPEZOID PACKAGING: Now in all new, special edition holographic packaging that shows off Jade's personal style.",
             "SUPER STYLIN’ FASHIONS: Jade includes 2 outfits for tons of mix ‘n’ match possibilities!",
             "INCLUDES: 1 Bratz Girls Nite Out 21st Birthday Edition Fashion Doll, 2 outfits, 2 pairs of shoes, accessories, hair brush, and holographic poster."
+        ],
+    },
+    {
+        id: 14,
+        name: "Draculaura",
+        brand: "Monster High",
+        collectionName: "Posable Fashion Doll with Accessories and Pet",
+        price: 1999,
+        description: [
+            "School is back in session, and the Monster High ghouls are strutting the hallways in scream-tastic style!",
+            "Draculaura doll wears a fang-tastic fashion featuring heart-print shorts and a vampy corset blouse with sheer sleeves and ruffled details.",
+            "Gore-geous details include a heart-shaped backpack, sheer stockings, freaky-fab platform shoes, batty sunglasses and a headband in her pink and black hair.",
+            "Take Draculaura doll's look to the next level with a scary-chic cape and fab-boo-lous accessories, like a backpack, smartphone, snacks and SPF 500 sunblock.",
+            "Inspire spooktacular storytelling with her creepy-cute pet bat, Count Fabulous!"
+        ],
+    },
+    {
+        id: 15,
+        name: "Frankie Stein",
+        brand: "Monster High",
+        collectionName: "Posable Fashion Doll with Accessories and Pet",
+        price: 1999,
+        description: [
+            "School is back in session, and the Monster High ghouls are strutting the hallways in scream-tastic style!",
+            "Frankie Stein doll wears an electrifying fashion featuring a plaid skirt, lightning bolt-printed blouse and a scary-chic vest.",
+            "Gore-geous details include chunky platform sneakers, a chain belt and lightning bolt-detailed sunglasses, earrings and hair clips.",
+            "Take Frankie Stein doll's look to the next level with a voltageous varsity jacket and freaky-fab accessories, like a lightning bolt-shaped backpack, insta-camera, pizza snack and smartphone.",
+            "Inspire spooktacular storytelling with their creepy-cute pet, Watzie!"
+        ],
+    },
+    {
+        id: 16,
+        name: "Cleo De Nile",
+        brand: "Monster High",
+        collectionName: "Posable Fashion Doll with Accessories and Pet",
+        price: 1900,
+        description: [
+            "School is back in session, and the Monster High ghouls are strutting the hallways in scream-tastic style!",
+            "Cleo De Nile doll wears a royally cool fashion featuring a blue and golden dress with mummy wrap-inspired sleeves and a scary-chic chain belt.",
+            "Gore-geous details include killer knee-high boots, a creepy-cool collar necklace, matching earrings and glam sunglasses.",
+            "Take Cleo De Nile doll's look to the next level with a freaky-fabulous fringe jacket and freaky-fab accessories, like a scarab beetle-studded pyramid backpack, burrito snack, beverage, smartphone and makeup compact.",
+            "Inspire spooktacular storytelling with her creepy-cute pet pup, Tut!"
+        ],
+    },
+    {
+        id: 17,
+        name: "Clawdeen Wolf",
+        brand: "Monster High",
+        collectionName: "Posable Fashion Doll with Accessories and Pet",
+        price: 1900,
+        description: [
+            "School is back in session, and the Monster High ghouls are strutting the hallways in scream-tastic style!",
+            "Clawdeen Wolf doll wears a clawsome fashion featuring an animal-print jumper and boo-tiful long-sleeve top.",
+            "Gore-geous details include killer sneakers and a chain belt, glasses and jewelry with a glam, golden finish.",
+            "Take Clawdeen Wolf doll's look to the next level with a fierce, faux-fur vest and scary-chic accessories, like a purse, comb, moon-shaped ice cream sandwich, snack and smartphone.",
+            "Inspire spooktacular storytelling with her creepy-cute pet, Crescent!"
+        ],
+    },
+    {
+        id: 18,
+        name: "Lagoona Blue",
+        brand: "Monster High",
+        collectionName: "Posable Fashion Doll with Accessories and Pet",
+        price: 2399,
+        description: [
+            "School is back in session, and the Monster High ghouls are strutting the hallways in scream-tastic style!",
+            "Lagoona Blue doll wears a fin-tastic fashion featuring a hot-pink hoodie with mesh sleeves and a trendy, tie-dye bike shorts romper.",
+            "Gore-geous details include a sea monster-inspired waist bag, sunglasses and freaky-fab platform sandals, while her calves feature blue shading and delicate fins!",
+            "Take her look to the next level with a 'metallic', fish scale-detailed swimsuit and to-die-for accessories, like a seashell backpack, snacks and a smartphone.",
+            "Inspire spooktacular storytelling with her creepy-cute pet, Neptuna!"
         ],
     },
 ]
