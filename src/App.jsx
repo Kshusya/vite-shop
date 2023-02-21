@@ -12,7 +12,7 @@ export function addToCart(cart, setCart, id) {
 }
 
 export function removeFromCart(cart, setCart, id) {
-  const itemIndex = cart.findIndex(value => value === id)
+  const itemIndex = cart.lastIndexOf(id)
 
   // --I have two ways to write this code, the first one:
   // setCart(cart.filter((_, i) => i !== itemIndex))
@@ -27,17 +27,17 @@ export function getQuantityById(cart, id) {
 }
 
 function App() {
-  const [cart, setCartState] = React.useState([])
+  const [cart, setCartState] = React.useState(() => {
+    const cartData = window.localStorage.getItem('cart')
+    if (cartData !== null)
+      return JSON.parse(cartData);
+    return [];
+  })
 
   function setCart(value) {
     setCartState(value)
     window.localStorage.setItem('cart', JSON.stringify(value))
   }
-
-  useEffect(() => {
-    const cartData = window.localStorage.getItem('cart')
-    if (cartData !== null) setCartState(JSON.parse(cartData));
-  }, [])
 
   return (
     <div className='container'>
