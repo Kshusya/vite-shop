@@ -16,7 +16,7 @@ function ProductsInCart(props) {
             <div className="cart__description">
                 <Link to={`/product/${props.id}`}>
                     <div className='cart__image_overlay-grey'>
-                        <img width="100" height="100" className='cart__image' src={`/${props.id}.jpg`} alt="" />
+                        <img width="100" height="100" className='cart__image' src={`/${props.id}_1.jpg`} alt="" />
                     </div>
                 </Link>
                 <Link to={`/product/${props.id}`}>
@@ -52,12 +52,20 @@ export default function cartProduct() {
         )
     })
 
-    return <><div className="product-cart-block">
-        <div className='cart'>{productCart}</div>
-        <div className='total'>
-            <button className="total__button">Proceed to checkout</button>
-            <div className="total__subtotal">Subtotal: {calculateTotalPrice(cart).toFixed(2)}$</div>
+    if (cart.length === 0) {
+        return <div className="empty-cart">
+            <p className="empty-cart__header">Your cart is empty. <Link className="empty-cart__homelink" to={`/`}>Go to shop</Link></p>
+            <img className="empty-cart__icon" width="100" height="100" src="/cart.svg" alt="" />
         </div>
-    </div>
+    }
+
+    return <>
+        <div className="product-cart-block">
+            <div className='cart'>{productCart}</div>
+            <div className='total'>
+                <button className="total__button">Proceed to checkout</button>
+                <div className="total__subtotal">Subtotal: {calculateTotalPrice(cart).toFixed(2)}$</div>
+            </div>
+        </div>
     </>
 }

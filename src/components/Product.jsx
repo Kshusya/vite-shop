@@ -10,7 +10,7 @@ export default function Product(props) {
         <div>
             <Link to={`/product/${props.id}`}>
                 <div className='product__image_overlay-grey'>
-                    <img width="250" height="250" className='product__image' src={`/${props.id}.jpg`} alt="" />
+                    <img width="250" height="250" className='product__image' src={`/${props.id}_1.jpg`} alt="" />
                 </div>
             </Link>
             <Link to={`/product/${props.id}`}>
