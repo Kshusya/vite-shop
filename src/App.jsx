@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Page from './pages/SingleProductPage'
 import { Route, Routes } from 'react-router-dom'
 import IndexPage from './pages/IndexPage'
@@ -14,9 +14,6 @@ export function addToCart(cart, setCart, id) {
 export function removeFromCart(cart, setCart, id) {
   const itemIndex = cart.lastIndexOf(id)
 
-  // --I have two ways to write this code, the first one:
-  // setCart(cart.filter((_, i) => i !== itemIndex))
-  // --and the second one:
   let cartCopy = [...cart]
   cartCopy.splice(itemIndex, 1)
   setCart(cartCopy)

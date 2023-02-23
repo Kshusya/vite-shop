@@ -1,4 +1,4 @@
-import products, { getProductById } from "../products"
+import { getProductById } from "../products"
 import { UserContext } from "../App"
 import { useContext } from "react"
 import { addToCart, removeFromCart, getQuantityById } from "../App"
